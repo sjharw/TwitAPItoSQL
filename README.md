@@ -19,8 +19,8 @@ Having done this, your settings.JSON file should now contain the following code:
 
 ```
 {
-"python.defaultInterpreterPath": "C:\\filePathToVirtualEnvironment\\virtual_environment\\Scripts\\python" # this points interpreter to Python VE
-, "python.terminal.activateEnvironment": true # this automatically activates Python VE
+"python.defaultInterpreterPath": "C:\\filePathToVirtualEnvironment\\virtual_environment\\Scripts\\python"
+, "python.terminal.activateEnvironment": true 
 }
 ```
 
