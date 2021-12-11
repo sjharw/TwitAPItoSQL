@@ -13,8 +13,17 @@ python -m venv envName
 
 Point Python interpreter to your VE (the interpreter automatically points to the Global Environment) by adding the file path to Python in your VE folder with *python.defaultInterpreterPath* in the settings.JSON file. To open settings.JSON file in VSC,	open Command Palette and search + click ‘Preferences: Open workspace settings’, and then click the top right icon ('Open Settings (JSON)’).
 
-
 Automatically activate the VE when opening the Python terminal by changing *python.terminal.activateEnvironment* to true within the settings.JSON file. Make sure your developer settings on your local device are set to permit the running of PowerShell scripts without signing.
+
+Having done this, your settings.JSON file should now contain the following code:
+
+```
+{
+"python.defaultInterpreterPath": "C:\\filePathToVirtualEnvironment\\virtual_environment\\Scripts\\python" # this points interpreter to Python VE
+, "python.terminal.activateEnvironment": true # this automatically activates Python VE
+}
+```
+
 
 Download required Python modules using pip install. Here, you will need the following modules: requests (to make API request), os (for access tokens), pandas (for data frame creation), json (for managing JSON output from GET request), base64 (for key generation), pyodbc (to connect to SQL), numpy (for list manipulation), and time (for delaying GET requests).
 
