@@ -24,8 +24,15 @@ Having done this, your settings.JSON file should now contain the following code:
 }
 ```
 
+### Download required packages
 
-Download required Python modules using pip install. Here, you will need the following modules: requests (to make API request), os (for access tokens), pandas (for data frame creation), json (for managing JSON output from GET request), base64 (for key generation), pyodbc (to connect to SQL), numpy (for list manipulation), and time (for delaying GET requests).
+Download required Python modules using pip install. Here, you will need the following modules: requests (to make API request), os (for access tokens), pandas (for data frame creation), json (for managing JSON output from GET request), base64 (for key generation), pyodbc (to connect to SQL), numpy (for list manipulation), and time (for delaying GET requests). Target these packages to your VE library using --target. 
+
+```
+python -m pip install --target="C:\filePathToVirtualEnvironment\virtual_environment\Lib\site-packages" packageName
+
+```
+
 
 ### Create Twitter app
 Apply for Developer Access on twitter, create an App in the developer’s portal and note down the API Key, API Secret, Bearer Token, and App ID. This information will be used to send a GET request to Twitter in Python.
